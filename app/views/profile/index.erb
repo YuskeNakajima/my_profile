@@ -1,0 +1,41 @@
+<div class="wrap">
+  <header class="profile-header">
+    <h1>
+      <span>自</span>
+      <span>己</span>
+      <span>紹</span>
+      <span>介</span>
+    </h1>
+  </header>
+  <div class="container">
+    <div class="profile-area">
+      <div class="main-image-area">
+        <div></div>
+      </div>
+      <div class="profile-area-item">
+        <label>氏名</label>
+        <p><%= @name %></p>
+      </div>
+      <div class="profile-area-item">
+        <label>ニックネーム</label>
+        <p><%= @nick_name %></p>
+      </div>
+      <div class="profile-area-item">
+        <label>趣味</label>
+        <p><%= multi_item_view @hobbies %></p>
+      </div>
+      <div class="profile-area-item">
+        <label>好きな画像</label>
+        <p class="like-image"><%= image_tag @like_picture %></p>
+      </div>
+      <div class="profile-area-item">
+        <label>習得済みプログラミング言語</label>
+        <p><%= multi_item_view @programming_languages %></p>
+      </div>
+      <div class="profile-area-item">
+        <label>自身の人柄について</label>
+        <p><%= new_line_to_br @explain_personality %></p>
+      </div>
+    </div>
+  </div>
+</div>
