@@ -5,7 +5,7 @@ class ProfileController < ApplicationController
     @nick_name = 'ゆーすけ'
     @hobbies = %w[ギター バスケ]
     @programming_languages = %w[C# Javascript Python Ruby]
-    @like_picture = 'hokusai_okinamiura.jpg'
+    @like_picture = {:file => 'hokusai_okinamiura.jpg', :alt => '葛飾北斎 神奈川沖浪裏'}
     @explain_personality = "初対面の方からは落ち着いているとよく言われます。" +
       "おそらく聞き役から入ることが多いのでそういった印象を持たれやすいのかなと思います。" +
       "付き合いが多くなると、口数が増えるので内弁慶タイプなんでしょうね。" +

@@ -26,7 +26,7 @@
       </div>
       <div class="profile-area-item">
         <label>好きな画像</label>
-        <p class="like-image"><%= image_tag @like_picture %></p>
+        <p class="like-image"><%= image_tag @like_picture[:file], :alt => @like_picture[:alt] %></p>
       </div>
       <div class="profile-area-item">
         <label>習得済みプログラミング言語</label>
