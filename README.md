@@ -7,3 +7,11 @@
 </div>
 
 - rails version: 6.1
+
+## 最初にやる
+
+```shell
+docker compose build
+docker compose up -d
+docker compose exec web bundle exec rails webpacker:install
+```
